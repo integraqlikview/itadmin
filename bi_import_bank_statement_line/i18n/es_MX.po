@@ -1,0 +1,213 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bi_import_bank_statement_line
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-19 16:38+0000\n"
+"PO-Revision-Date: 2021-02-19 11:42-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: bi_import_bank_statement_line
+#: code:addons/bi_import_bank_statement_line/models/bank_statement.py:0
+#, python-format
+msgid " \"%s\" Currency are not available."
+msgstr " \"%s\" Moneda no disponible."
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model,name:bi_import_bank_statement_line.model_account_bank_statement_wizard
+msgid "Account Bank Statement Wizard"
+msgstr "Asistente de estado de cuenta bancaria"
+
+#. module: bi_import_bank_statement_line
+#: model_terms:ir.ui.view,arch_db:bi_import_bank_statement_line.view_bank_statement_form_inherit_import_lines
+msgid "Add Lines"
+msgstr "Agregar líneas"
+
+#. module: bi_import_bank_statement_line
+#. openerp-web
+#: code:addons/bi_import_bank_statement_line/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid "Automatic reconciliation"
+msgstr "Reconciliación automática"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields.selection,name:bi_import_bank_statement_line.selection__account_bank_statement_wizard__file_opt__csv
+msgid "CSV"
+msgstr "CSV"
+
+#. module: bi_import_bank_statement_line
+#: model_terms:ir.ui.view,arch_db:bi_import_bank_statement_line.bank_statement_import_line_wizard
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields.selection,name:bi_import_bank_statement_line.selection__account_bank_statement_wizard__file_opt__excel
+msgid "Excel"
+msgstr "Excel"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard__file
+msgid "File"
+msgstr "Archivo"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard__file_opt
+msgid "File Opt"
+msgstr "Opción de archivo"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: bi_import_bank_statement_line
+#: model_terms:ir.ui.view,arch_db:bi_import_bank_statement_line.bank_statement_import_line_wizard
+msgid "Import"
+msgstr "Importar"
+
+#. module: bi_import_bank_statement_line
+#: model_terms:ir.ui.view,arch_db:bi_import_bank_statement_line.bank_statement_import_line_wizard
+msgid "Import Bank Statement Lines"
+msgstr "Importar líneas de extracto bancario"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: bi_import_bank_statement_line
+#: model:ir.model.fields,field_description:bi_import_bank_statement_line.field_account_bank_statement_wizard__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: bi_import_bank_statement_line
+#. openerp-web
+#: code:addons/bi_import_bank_statement_line/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid "Let odoo try to reconcile entries for the user"
+msgstr "Deja que odoo intente conciliar entradas para el usuario."
+
+#. module: bi_import_bank_statement_line
+#. openerp-web
+#: code:addons/bi_import_bank_statement_line/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid "Load more"
+msgstr "Carga más"
+
+#. module: bi_import_bank_statement_line
+#: code:addons/bi_import_bank_statement_line/models/bank_statement.py:0
+#, python-format
+msgid "Not a valid file!"
+msgstr "¡No es un archivo válido!"
+
+#. module: bi_import_bank_statement_line
+#. openerp-web
+#: code:addons/bi_import_bank_statement_line/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid "Nothing to do!"
+msgstr "¡Nada que hacer!"
+
+#. module: bi_import_bank_statement_line
+#. openerp-web
+#: code:addons/bi_import_bank_statement_line/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid "OK"
+msgstr "OK"
+
+#. module: bi_import_bank_statement_line
+#: code:addons/bi_import_bank_statement_line/models/bank_statement.py:0
+#, python-format
+msgid "Please Provide Date Field Value"
+msgstr "Proporcione el valor del campo de fecha"
+
+#. module: bi_import_bank_statement_line
+#: code:addons/bi_import_bank_statement_line/models/bank_statement.py:0
+#, python-format
+msgid "Please Provide Memo Field Value"
+msgstr "Proporcione el valor del campo Memo"
+
+#. module: bi_import_bank_statement_line
+#: code:addons/bi_import_bank_statement_line/models/bank_statement.py:0
+#, python-format
+msgid "Please Select File Type"
+msgstr "Seleccione el tipo de archivo"
+
+#. module: bi_import_bank_statement_line
+#: code:addons/bi_import_bank_statement_line/models/bank_statement.py:0
+#, python-format
+msgid "Please add Date field in sheet."
+msgstr "Agregue el campo Fecha en la hoja."
+
+#. module: bi_import_bank_statement_line
+#. openerp-web
+#: code:addons/bi_import_bank_statement_line/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid ""
+"This page displays all the bank transactions that are to be reconciled and "
+"provides with a neat interface to do so."
+msgstr ""
+"Esta página muestra todas las transacciones bancarias que se van a "
+"conciliar y proporciona una interfaz ordenada para hacerlo."
+
+#. module: bi_import_bank_statement_line
+#. openerp-web
+#: code:addons/bi_import_bank_statement_line/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid "Tip: Hit CTRL-Enter to reconcile all the balanced items in the sheet."
+msgstr ""
+"Consejo: presione CTRL-Enter para conciliar todos los elementos "
+"equilibrados en la hoja."
+
+#. module: bi_import_bank_statement_line
+#: code:addons/bi_import_bank_statement_line/models/bank_statement.py:0
+#, python-format
+msgid "Wrong Date Format. Date Should be in format DD/MM/YYYY."
+msgstr ""
+"Formato de fecha incorrecto. La fecha debe tener el formato DD / MM / AAAA."
+
+#. module: bi_import_bank_statement_line
+#: code:addons/bi_import_bank_statement_line/models/bank_statement.py:0
+#, python-format
+msgid "Wrong Date Format. Date Should be in format YYYY-MM-DD."
+msgstr ""
+"Formato de fecha incorrecto. La fecha debe tener el formato AAAA-MM-DD."
+
+#. module: bi_import_bank_statement_line
+#: model:ir.actions.act_window,name:bi_import_bank_statement_line.action_bank_statement_import_line_wizard
+msgid "action bank statement import line wizard"
+msgstr "asistente de línea de importación de extracto bancario de acción"
+
+#. module: bi_import_bank_statement_line
+#: model_terms:ir.ui.view,arch_db:bi_import_bank_statement_line.bank_statement_import_line_wizard
+msgid "or"
+msgstr "o"

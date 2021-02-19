@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+
+          <!-- reconciliation WIdget -->
+
+            <t t-extend="reconciliation.statement">
+                <t t-jquery="div:first" t-operation="replace">
+                    <div>
+                        <div>
+                            <h1 class="statement_name"/>
+                            <h1 class="statement_name_edition" style="display: none;"><button class="btn btn-primary btn-sm pull-right">OK</button></h1>
+                            <div class="progress progress-striped">
+                                <div class="progress-text">
+                                    <span class="valuenow"><t t-esc="widget._initialState.valuenow"/></span> / <span class="valuemax"><t t-esc="widget._initialState.valuemax"/></span>
+                                </div>
+                                <div aria-valuemin="0" t-att-aria-valuenow="widget._initialState.valuenow" class="progress-bar" role="progressbar" style="width: 0%;" t-att-aria-valuemax="widget._initialState.valuemax"></div>
+                            </div>
+                            <button class="btn btn-default o_automatic_reconciliation pull-right" title="Let odoo try to reconcile entries for the user">Automatic reconciliation</button>
+                            <div class="notification_area"/>
+                        </div>
+                        <div class="o_reconciliation_lines"/>
+                        <div t-if="widget._initialState.valuemax &gt; widget._initialState.defaultDisplayQty">
+                            <button class="btn btn-default js_load_more">Load more</button>
+                        </div>
+                        <div class="pull-right text-muted">Tip: Hit CTRL-Enter to reconcile all the balanced items in the sheet.</div>
+                    </div>
+
+                    </t>
+
+                    <t t-jquery="div:last" t-operation="replace">
+                        <div class="o_view_nocontent">
+                            <p>Nothing to do!</p>
+                            <p>This page displays all the bank transactions that are to be reconciled and provides with a neat interface to do so.</p>
+                        </div>
+                    </t>
+                    <!--<div class="o_view_nocontent">
+                        <p>Nothing to do!</p>
+                        <p>This page displays all the bank transactions that are to be reconciled and provides with a neat interface to do so.</p>
+                    </div>-->
+
+
+            </t>
+
+
+</templates>
+
