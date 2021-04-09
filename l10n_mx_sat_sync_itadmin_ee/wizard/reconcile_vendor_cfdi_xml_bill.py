@@ -123,7 +123,7 @@ class ReconcileVendorCfdiXmlBill(models.TransientModel):
                     else:
                         vals.update({'payment_id':payments[0].id})
             else:
-                invoices = invoice_obj.search([('partner_id.vat','=',client_rfc),('amount_total','=',total),('type','=', invoice_type)])
+                invoices = invoice_obj.search([('partner_id.vat','=',client_rfc),('amount_total','=',total),('move_type','=', invoice_type)])
                 if invoices:
                     inv = invoices.filtered(lambda x:x.state in ['open','draft'])
                     if inv:

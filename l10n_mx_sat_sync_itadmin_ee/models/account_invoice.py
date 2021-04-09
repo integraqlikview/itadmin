@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-import base64
-import os
-
 DEFAULT_CFDI_DATE_FORMAT = '%Y-%m-%dT%H:%M:%S'
 
 class AccountInvoice(models.Model):
@@ -13,10 +10,9 @@ class AccountInvoice(models.Model):
     l10n_mx_edi_cfdi_uuid_cusom = fields.Char(string='Fiscal Folio UUID', copy=False, readonly=True, compute="_compute_cfdi_uuid", store=True)
     
     
-#     @api.depends('l10n_mx_edi_cfdi_name')
+    @api.depends('edi_document_ids')
     def _compute_cfdi_uuid(self):
         for inv in self:
-            
             attachment_id = inv._get_l10n_mx_edi_signed_edi_document()
             if not attachment_id:
 #                 inv.l10n_mx_edi_cfdi_uuid_cusom=False
@@ -28,7 +24,7 @@ class AccountInvoice(models.Model):
                               ('res_model', '=', inv._name),
                               ('name', '=', results[0].name)]
                     
-                    attachment = inv.env['ir.attachment'].search(domain)
+                    attachment = inv.env['ir.attachment'].search(domain)[0]
                     for edi in inv.edi_document_ids:
                         if not edi.attachment_id:
                             vals=({'attachment_id':attachment.id,'move_id':inv.id})
