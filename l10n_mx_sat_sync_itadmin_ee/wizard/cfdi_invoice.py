@@ -602,7 +602,7 @@ class CfdiInvoiceAttachment(models.TransientModel):
         product_type_default = self.env['ir.config_parameter'].sudo().get_param('l10n_mx_sat_sync_itadmin.product_type_default')
 
         #tax_obj = self.env['account.tax']
-        partner_data = data.get('Comprobante',{}).get('Emisor',{})
+        partner_data = data.get('Comprobante',{}).get('Receptor',{})
         invoice_line_data = data.get('Comprobante',{}).get('Conceptos',{}).get('Concepto',[])
         if type(invoice_line_data)!=list:
             invoice_line_data = [invoice_line_data]

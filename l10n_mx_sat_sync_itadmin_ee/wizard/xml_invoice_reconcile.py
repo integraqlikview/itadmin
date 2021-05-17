@@ -93,6 +93,8 @@ class XMLInvoiceReconcile(models.TransientModel):
         if not invoice and not payment:
             raise Warning("Seleccionar primero la factura/pago y posteriormente reconciliar con el XML.")
         if invoice:
+            if invoice.amount_total != self.amount:
+                raise Warning('El total de la factura y el XML son distintos')
             invoice.write({'l10n_mx_edi_cfdi_uuid': self.folio_fiscal,
                            'l10n_mx_edi_usage' : self.uso_cfdi,
                            'l10n_mx_edi_cfdi_name' : self.attachment_id.store_fname,
@@ -103,6 +105,8 @@ class XMLInvoiceReconcile(models.TransientModel):
             invoice._compute_cfdi_uuid()
             self.write({'reconcilled':True})
         if payment:
+            if payment.amount != self.amount:
+                raise Warning('El total de la factura y el XML son distintos')
             payment.write({'l10n_mx_edi_cfdi_uuid': self.folio_fiscal,
                            'l10n_mx_edi_cfdi_name' : self.attachment_id.store_fname,
                            })
